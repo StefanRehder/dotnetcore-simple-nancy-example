@@ -25,4 +25,4 @@ The web service documentation is generated with Nancy.Swagger and can be viewed 
 5. Enjoy the Swagger documentation for the web service
 
 Play around with the running web service with curl or Postman.
-e.g. `curl --url http://localhost:8210/hero/Super%20Woman`
+e.g. `curl -X PUT http://localhost:8210/hero -H 'Content-Type: application/json' -v -d '{ "name": "Robin", "strength": 1 }'`

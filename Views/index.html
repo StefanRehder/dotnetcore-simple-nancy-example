@@ -17,7 +17,7 @@
             <li>Enjoy the Swagger documentation for the web service</li>
         </ol>
         <p>Play around with the running web service with curl or Postman.</p>
-        <p>e.g. curl --url http://localhost:8210/hero/Super%20Woman</p>
+	<p>e.g. curl -X PUT http://localhost:8210/hero -H 'Content-Type: application/json' -v -d '{ "name": "Robin", "strength": 1 }'</p>
         </div">
 </body>
 </html>

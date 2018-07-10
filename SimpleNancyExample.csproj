@@ -14,7 +14,7 @@
     <Content Include="views\index.html" />
   </ItemGroup>
   <PropertyGroup />
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="xcopy /y $(ProjectDir)Views\index.html $(ProjectDir)$(OutDir)" />
+  <Target Name="CopyIndex" AfterTargets="AfterBuild">
+	  <Copy SourceFiles="Views/index.html" DestinationFolder="$(OutDir)" />
   </Target>
 </Project>
