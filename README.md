@@ -11,7 +11,12 @@ The web service is self hosted and can run on any Windows, Linux or macOS comput
 
  ```
  dotnet build --configuration Release
+
+ # Windows
  dotnet bin\Release\netcoreapp2.0\SimpleNancyExample.dll
+
+ # Linux or macOS
+ dotnet bin/Release/netcoreapp2.0/SimpleNancyExample.dll
  ```
 
 When the web service is started, navigate to http://localhost:8210/ in a web browser for further details.
